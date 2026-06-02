@@ -1171,7 +1171,7 @@ static UIColor *MLColorFromHex(NSString *hexString) {
     NSInteger nextVisualizerStyle = (styleValue >= 0 && styleValue <= 4) ? styleValue : 0;
     
     BOOL nextRotateCircle = [defaults objectForKey:@"rotateCircle"] ? [defaults boolForKey:@"rotateCircle"] : YES;
-    CGFloat nextCircleRotationSpeed = [defaults objectForKey:@"circleRotationSpeed"] ? [defaults doubleForKey:@"circleRotationSpeed"] : 50.0;
+    CGFloat nextCircleRotationSpeed = [defaults objectForKey:@"circleRotationSpeed"] ? [defaults doubleForKey:@"circleRotationSpeed"] : 15.0;
     NSInteger nextCircleCount = [defaults objectForKey:@"circleCount"] ? [defaults integerForKey:@"circleCount"] : 3;
     BOOL nextCircleDynamicSize = [defaults objectForKey:@"circleDynamicSize"] ? [defaults boolForKey:@"circleDynamicSize"] : YES;
     CGFloat nextCircleSizePercent = [defaults objectForKey:@"circleSize"] ? [defaults doubleForKey:@"circleSize"] : 55.0;
