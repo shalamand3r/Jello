@@ -55,8 +55,6 @@
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
-			<key>footerText</key>
-			<string>Visit Jello Playground to create custom designs.</string>
 			<key>label</key>
 			<string>Style</string>
 		</dict>
@@ -674,16 +672,6 @@
 			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>Actions</string>
-		</dict>
-		<dict>
-			<key>action</key>
-			<string>openPlayground</string>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>id</key>
-			<string>PlaygroundCell</string>
-			<key>label</key>
-			<string>Open Jello Playground...</string>
 		</dict>
 		<dict>
 			<key>cell</key>

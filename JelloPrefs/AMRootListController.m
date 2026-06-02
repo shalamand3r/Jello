@@ -296,12 +296,6 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/shalamand3r/Jello"] options:@{} completionHandler:nil];
 }
 
-- (void)openPlayground {
-    UIImpactFeedbackGenerator *haptic = [[UIImpactFeedbackGenerator alloc] initWithStyle:UIImpactFeedbackStyleMedium];
-    [haptic impactOccurred];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://shalamand3r.github.io/jello-playground"] options:@{} completionHandler:nil];
-}
-
 - (void)selectCustomColor {
     UIImpactFeedbackGenerator *haptic = [[UIImpactFeedbackGenerator alloc] initWithStyle:UIImpactFeedbackStyleMedium];
     [haptic impactOccurred];
