@@ -36,7 +36,7 @@ Because Jello uses the pre-calculated iOS waveform rather than raw audio data, i
 
 ---
 ## Credits
-- The creators of the original Mitsuha tweak for the inspiration.
+- The creators of the many iterations of the Mitsuha tweak (for the inspiration).
 ---
 
 <p align="center">
