@@ -413,13 +413,6 @@ static UIColor *MLColorFromHex(NSString *hexString) {
     }
     CGColorRef secondaryCgColor = MLColorWithAlpha(secondaryColor, opacity * 0.8).CGColor;
     
-    if (_circleIntersectionStyle == 2 && _visualizerStyle == 1) {
-        cgColor = _tintColor.CGColor;
-        secondaryCgColor = secondaryColor.CGColor;
-        _circleContainerLayer.opacity = opacity;
-        opacity = 1.0;
-    }
-    
     if (_colorMode == 0 && _visualizerStyle == 0 && MLArtworkTintColors.count >= 3) {
         _jelloLayer.fillColor = MLColorWithAlpha(MLArtworkTintColors[0], opacity).CGColor;
         _jelloLayerMid.fillColor = MLColorWithAlpha(MLArtworkTintColors[1], opacity).CGColor;
@@ -442,8 +435,6 @@ static UIColor *MLColorFromHex(NSString *hexString) {
     if (_visualizerStyle == 1) {
         if (_circleIntersectionStyle == 1) {
             blendMode = @"screenBlendMode";
-        } else if (_circleIntersectionStyle == 2) {
-            blendMode = @"xor";
         }
     }
     

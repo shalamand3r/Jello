@@ -172,15 +172,8 @@
         NSString *specId = [spec propertyForKey:@"id"];
 
         if (style != 1) {
-            if ([specId isEqualToString:@"blendGroup"] || [specId isEqualToString:@"circleIntersectionStyle"] || [specId isEqualToString:@"rotateCircle"] || [specId isEqualToString:@"circleRotationSpeed"] || [specId isEqualToString:@"circleGroup"] || [specId isEqualToString:@"circleSizeGroup"] || [specId isEqualToString:@"circleSize"] || [specId isEqualToString:@"circleCount"] || [specId isEqualToString:@"circleDynamicSize"] || [specId isEqualToString:@"circleTransparentBlending"]) continue;
-        } else {
-            if (![prefs boolForKey:@"rotateCircle"]) {
                 if ([specId isEqualToString:@"circleRotationSpeed"]) continue;
-            }
-            NSInteger circleCount = [prefs objectForKey:@"circleCount"] ? [prefs integerForKey:@"circleCount"] : 2;
-            if (circleCount != 2) {
-                if ([specId isEqualToString:@"circleTransparentBlending"]) continue;
-            }
+            if ([specId isEqualToString:@"blendGroup"] || [specId isEqualToString:@"circleIntersectionStyle"] || [specId isEqualToString:@"rotateCircle"] || [specId isEqualToString:@"circleRotationSpeed"] || [specId isEqualToString:@"circleGroup"] || [specId isEqualToString:@"circleSizeGroup"] || [specId isEqualToString:@"circleSize"] || [specId isEqualToString:@"circleCount"] || [specId isEqualToString:@"circleDynamicSize"]) continue;
         }
         if (style != 2) {
             if ([specId isEqualToString:@"barsGroup"] || 
@@ -387,7 +380,6 @@
     CFPreferencesSetAppValue(CFSTR("circleIntersectionStyle"), NULL, suiteRef);
     CFPreferencesSetAppValue(CFSTR("rotateCircle"), NULL, suiteRef);
     CFPreferencesSetAppValue(CFSTR("circleRotationSpeed"), NULL, suiteRef);
-    CFPreferencesSetAppValue(CFSTR("circleTransparentBlending"), NULL, suiteRef);
     CFPreferencesSetAppValue(CFSTR("colorMode"), NULL, suiteRef);
     CFPreferencesSetAppValue(CFSTR("customColorHex"), NULL, suiteRef);
     CFPreferencesSetAppValue(CFSTR("barsThickness"), NULL, suiteRef);

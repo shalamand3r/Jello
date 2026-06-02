@@ -263,22 +263,6 @@
 			</array>
 		</dict>
 		<dict>
-			<key>PostNotification</key>
-			<string>com.shalamand3r.jello.preferences.changed</string>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<false/>
-			<key>defaults</key>
-			<string>com.shalamand3r.jello</string>
-			<key>id</key>
-			<string>circleTransparentBlending</string>
-			<key>key</key>
-			<string>circleTransparentBlending</string>
-			<key>label</key>
-			<string>Transparent Blending</string>
-		</dict>
-		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>id</key>
