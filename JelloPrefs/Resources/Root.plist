@@ -79,7 +79,6 @@
 				<string>Circle</string>
 				<string>Bars</string>
 				<string>Waveform</string>
-				<string>Custom</string>
 			</array>
 			<key>validValues</key>
 			<array>
@@ -87,7 +86,6 @@
 				<integer>1</integer>
 				<integer>2</integer>
 				<integer>4</integer>
-				<integer>3</integer>
 			</array>
 		</dict>
 		<dict>
