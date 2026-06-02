@@ -1060,7 +1060,7 @@ static UIColor *MLColorFromHex(NSString *hexString) {
         CGFloat mappedSpeed = (_circleRotationSpeed / 100.0) * 0.70;
         _rotationAngle += mappedSpeed * dt;
         changed = YES;
-    } else if (_visualizerStyle == 2 || _visualizerStyle == 4) {
+    } else if (_visualizerStyle == 2 || _visualizerStyle == 3 || _visualizerStyle == 4) {
         changed = YES; 
         _rotationAngle += dt; 
     }
@@ -1069,7 +1069,7 @@ static UIColor *MLColorFromHex(NSString *hexString) {
         [self layoutVisualizerAnimated:NO];
     }
 
-    if (!changed && maxTarget < 0.018f && _visualizerStyle != 2 && _visualizerStyle != 4 && !(_visualizerStyle == 1 && _rotateCircle)) {
+    if (!changed && maxTarget < 0.018f && _visualizerStyle != 2 && _visualizerStyle != 3 && _visualizerStyle != 4 && !(_visualizerStyle == 1 && _rotateCircle)) {
         _displayLink.paused = YES;
     }
 }
