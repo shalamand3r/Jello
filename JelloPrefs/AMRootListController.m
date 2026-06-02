@@ -172,7 +172,6 @@
         NSString *specId = [spec propertyForKey:@"id"];
 
         if (style != 1) {
-                if ([specId isEqualToString:@"circleRotationSpeed"]) continue;
             if ([specId isEqualToString:@"blendGroup"] || [specId isEqualToString:@"circleIntersectionStyle"] || [specId isEqualToString:@"rotateCircle"] || [specId isEqualToString:@"circleRotationSpeed"] || [specId isEqualToString:@"circleGroup"] || [specId isEqualToString:@"circleSizeGroup"] || [specId isEqualToString:@"circleSize"] || [specId isEqualToString:@"circleCount"] || [specId isEqualToString:@"circleDynamicSize"]) continue;
         }
         if (style != 2) {
