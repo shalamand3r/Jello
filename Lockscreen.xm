@@ -1014,7 +1014,7 @@ static UIColor *MLColorFromHex(NSString *hexString) {
     CGFloat maxTarget = 0.0f;
     float shapedTargets[6];
     CGFloat amplitudeScale = _amplitudeLevel == 0 ? 0.52f : (_amplitudeLevel == 2 ? 1.18f : 0.8f);
-    
+
     CGFloat allowedDiscrepancy = _amplitudeLevel == 0 ? 0.10f : (_amplitudeLevel == 2 ? 0.42f : 0.17f);
     CGFloat excessScale = _amplitudeLevel == 0 ? 0.12f : (_amplitudeLevel == 2 ? 0.75f : 0.24f);
     CGFloat chaseFactor = _amplitudeLevel == 0 ? 0.22f : (_amplitudeLevel == 2 ? 0.30f : 0.24f);
@@ -1136,8 +1136,8 @@ static UIColor *MLColorFromHex(NSString *hexString) {
 
 - (void)reloadPreferences {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:MLPrefsSuiteName];
-    NSInteger amplitudeValue = [defaults integerForKey:MLAmplitudePreferenceKey];
-    NSInteger nextAmplitudeLevel = amplitudeValue == 0 || amplitudeValue == 2 ? amplitudeValue : 1;
+    NSInteger amplitudeValue = [defaults objectForKey:MLAmplitudePreferenceKey] ? [defaults integerForKey:MLAmplitudePreferenceKey] : 1;
+    NSInteger nextAmplitudeLevel = (amplitudeValue >= 0 && amplitudeValue <= 2) ? amplitudeValue : 1;
     CGFloat nextHeightPercent = [defaults doubleForKey:MLHeightPreferenceKey];
     if (nextHeightPercent <= 0.0) nextHeightPercent = 85.0;
     nextHeightPercent = round(nextHeightPercent / 5.0) * 5.0;
