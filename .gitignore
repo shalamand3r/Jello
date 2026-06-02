@@ -1,3 +1,5 @@
-reference/
+.theos/
+obj/
 packages/
+reference/
 .DS_Store
