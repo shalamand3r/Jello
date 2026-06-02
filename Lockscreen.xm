@@ -539,7 +539,7 @@ static UIColor *MLColorFromHex(NSString *hexString) {
     CGFloat baseRadius = MIN(rect.size.width, rect.size.height) * baseRadiusMultiplier;
     
     if (_circleDynamicSize) {
-        CGFloat bassBump = (_amplitudes[0] + _amplitudes[1]) / 2.0;
+        CGFloat bassBump = MAX(_amplitudes[0], _amplitudes[1]);
         CGFloat dynamicBumpFactor = _amplitudeLevel == 0 ? 0.12 : (_amplitudeLevel == 2 ? 0.40 : 0.25);
         CGFloat bumpMultiplier = 1.0 + (bassBump * dynamicBumpFactor);
         baseRadius *= bumpMultiplier;
