@@ -3,6 +3,7 @@
         bundle = JelloPrefs;
         cell = PSLinkCell;
         detail = AMRootListController;
+        icon = icon.png;
         isController = 1;
         label = Jello;
     };
