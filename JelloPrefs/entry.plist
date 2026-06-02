@@ -1,0 +1,9 @@
+{
+    entry = {
+        bundle = JelloPrefs;
+        cell = PSLinkCell;
+        detail = AMRootListController;
+        isController = 1;
+        label = Jello;
+    };
+}

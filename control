@@ -1,0 +1,11 @@
+Package: com.shalamand3r.jello
+Name: Jello
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0)
+Description: A lock screen audio visualizer!
+Icon: https://github.com/shalamand3r/shalamand3r.github.io/blob/main/icons/jello.png?raw=true
+SileoDepiction: https://raw.githubusercontent.com/shalamand3r/shalamand3r.github.io/refs/heads/main/depictions/jello.json
+Maintainer: shalamand3r
+Author: shalamand3r
+Section: Tweaks
